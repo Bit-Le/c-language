@@ -13,14 +13,14 @@
 #include <stdlib.h>
 int main()
 {
-int i, j=0；
-i=rand()%100+1；		/*产生一个随机数(1~100之间）*/
-printf("请输入你猜的数(1~100):")；
-scanf("%d",&j)；
+int i,j=0;
+i=rand()%100+1;		/*产生一个随机数(1~100之间）*/
+printf("请输入你猜的数(1~100):");
+scanf("%d",&j);
 if(i>j)
-	printf("猜小了!再猜猜看吧!\n")；
+	printf("猜小了!再猜猜看吧!\n");
 else if(i<j)
-	printf("猜大了!再猜猜看吧!\n")；
+	printf("猜大了!再猜猜看吧!\n");
 else
 	printf(“恭喜你!这次猜对了!\n");
 return 0;
