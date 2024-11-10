@@ -1,0 +1,25 @@
+/* 设有变量a、b、c、d且都已正确定义并赋值。若有下列if语句:
+if(a<b)
+   if(c==d)  y=0;
+   else      y=1;
+该语句所表示的含义是______。
+A
+当a<b且c=d时,y的值为0;当c≠d时,y的值为1。
+B
+当a<b且c=d时,y的值为0;当a≥b时,y的值为1。
+C
+当a<b且c=d时,y的值为0;当a≥b且c≠d时,y的值为1。
+D
+当a<b且c=d时,y的值为0;当a<b且c≠d时,y的值为1。*/
+
+
+
+#include <stdio.h>
+int main()
+{
+	int a=1,b=2,c=3,d=4;
+if(a<b)
+	if(c==d) printf("0\n");
+else printf("1\n");
+return 0;
+}
