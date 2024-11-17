@@ -1,0 +1,24 @@
+输入10个学生的成绩，求平均分。
+【解题思路】先求这 10 个成绩的和再除以 10 即可得平均分。此处明确知道循环次数，即累加10次，所以可以用 for循环，通过变量i（从1到10)控制循环次数。
+
+
+
+
+
+
+
+#include <stdio.h>
+int main()
+{
+int i,sum=0,score;
+double aver;
+printf("请输入10名学生的成绩：\n");
+for(i=1;i<=10;i++)
+{
+	scanf("%d",&score);
+	sum+=score;
+}
+aver=sum/10;
+printf("平均分为：%.2f",aver);
+return 0;
+}
