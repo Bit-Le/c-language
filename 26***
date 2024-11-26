@@ -224,3 +224,40 @@ return 0;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+答案
+BDCDC
+ACDDC
+BB
+
+13.(1) s=0
+(2) sign*t;t*sign
+(3) i/pow(2,i);1.0*i/pow(2,i);i*1.0/pow(2,i)
+
+14.(1) '\n'
+(2) ch>='0'&&ch<='9';ch<='9'&&ch>='0'
+(3) ch=getchar();scanf("%c",&ch)
+
+15.(1) s=1
+(2) i<4;i<=3
+(3) j%10
+(4) putchar('\n');printf("\n")
+
+16.(1) &m
+(2) break
+(3) i>=m;i==m;m==i;m<=i
+
