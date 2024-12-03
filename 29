@@ -22,9 +22,9 @@ int main()
 {
 	int g,m;
 	float x;
-	for(g=1;g<=100;g++)
-		for(m=1;m<=100;m++)
-			for(x=1;x<=100;x++)
+	for(g=0;g<=100;g++)
+		for(m=0;m<=100;m++)
+			for(x=0;x<=100;x++)
 				if(g+m+x==100&&5*g+3*m+x/3==100)
 					printf("公鸡%d只，母鸡%d只，雏鸡%.0f只\n",g,m,x);
 	return 0;
