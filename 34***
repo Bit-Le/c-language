@@ -1,0 +1,107 @@
+二. 填空题（共3题，60分）
+11. (填空题, 18分)
+从键盘输入10个数，分两行从大到小输出这10个数中的奇数和偶数。
+#include <stdio.h>
+void sort(int a[],int n)
+{
+int i,j,temp;
+for(i=0;i<n-1;i++)
+for(j=0;j<n-1-i;j++)
+  if (____________________)              //从大到小排序
+  {
+temp=a[j];
+a[j]=a[j+1];
+a[j+1]=temp;     
+  }
+}
+int main()
+{
+int i,a[10];
+for (i=0;i<10;i++)
+scanf("%d",&a[i]);
+________________________; //函数调用
+printf("odd  number:");
+for (i=0;i<10;i++)
+if(a[i]%2!=0)
+printf("%5d",a[i]);
+printf("\n");
+printf("Even number:");
+for(i=0;i<10;i++)
+if(a[i]%2_____________)    //输出偶数
+printf("%5d",a[i]);
+printf("\n");
+return 0;
+}
+
+
+ 
+正确答案：
+(1) a[j]< a[j+1];a[j+1]>a[j]
+(2) sort(a,10)
+(3)
+==0 
+
+
+
+
+
+
+12. (填空题, 18分)
+下列程序中，fun()函数的功能是计算，主函数中将调用fun()函数计算：
+
+请填空。
+#include <stdio.h>
+#include <math.h>
+_________________________________;
+int main()
+{
+double x,y1,y2;
+printf("Enter x:");
+scanf("%lf",&x);
+y1=fun(x+2);
+y2=fun(___________);
+printf("y1=%lf,y2=%lf\n",y1,y2);
+return 0;
+}
+double fun(double x)
+{return _______________________;}
+
+
+(2) sin(x) 
+(3) x*x-3*x+2 
+正确答案：
+(1) double fun(double x)
+(2) sin(x)
+(3)
+x*x-3*x+2
+
+
+
+13. (填空题, 24分)
+输入一个字母，调用函数进行转换，如果是大写字母则转换为小写字母，如果是小写字母则转换为大写字母，其余字符不变。请填空将程序补充完整。
+#include <stdio.h>
+char change(char ch)
+{
+char ch1;
+if(______________________________)//若为小写字母
+ch1=ch-32;
+else if(ch>='A'&&ch<='Z') 
+ch1=______________;    //转换为小写字母
+else ch1=ch;
+    return _________;    //返回转换后的字母
+}
+int main()
+{
+char ch;
+ch=getchar();
+printf("_______\n",change(ch));    //输出函数调用的结果
+return 0;
+}
+
+正确答案：
+(1) ch>='a'&&ch<='z';ch<='z'&&ch>='a';'z'>=ch&&'a'<=ch;'a'<=ch&&'z'>=ch;
+(2) ch+32;ch+('a'-'A')
+(3) ch1
+(4)
+%c
+
