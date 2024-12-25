@@ -1,0 +1,25 @@
+输入10个数据，计算并输出其中所有正数的平均值。
+#include <stdio.h>
+#define N 10
+int main()
+{
+double ave=0,a[N], *p;
+int n=0;
+    p=___________ ;    
+while(p<a+N)
+    {
+scanf("%lf",p);
+if(____________)  
+ {
+n++;
+ave+=*p;
+       }
+___________;
+    }
+if(n>0)
+{ 
+ave/=n; 
+printf("ave=%lf\n",ave);
+ }
+else printf("Not exist positive number \n");
+return 0;
