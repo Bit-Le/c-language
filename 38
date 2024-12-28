@@ -13,3 +13,17 @@ swap(             );
 printf("a=%d,b=%d\n",             );
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+正确答案：
+(1) int *x,int *y
+(2) &a,&b
+(3) a,b 
