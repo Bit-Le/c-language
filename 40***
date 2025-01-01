@@ -1,125 +1,138 @@
-1. (单选题, 3分)下列不能输出字符串“Hello”的程序段是_________。
+ 1. (单选题, 3分)下列不能输出字符串“Hello”的程序段是_________。
 A. char *t;t="Hello";printf("%s\n",t); 
 B. char *t,s[]="Hello"; t=s; printf("%s\n",t);
-C.
-char *t,s[]="Hello"; t=s; printf("%s\n",s);
-
-
-
+C.char *t,s[]="Hello"; t=s; printf("%s\n",s);
 D. char s[20],*t=s; t="Hello"; printf("%s\n",s);
-我的答案: D:char s[20],*t=s; t="Hello"; printf("%s\n",s);;正确答案: D:char s[20],*t=s; t="Hello"; printf("%s\n",s);;
-3分
+
+
+正确答案: D:char s[20],*t=s; t="Hello"; printf("%s\n",s);;
+
+
+
+
+
 2. (单选题, 3分)已知：int a,b=7,*p=&a;，则与a=b;等价的语句是_________。
 A. *p=b;
 B. a=&b;
 C. a=**p;
 D. a=*p;
-我的答案: A:*p=b;;正确答案: A:*p=b;;
-3分
+
+
+正确答案: A:*p=b;;
+
+
+
+
+
+
 3. (单选题, 3分)有以下程序：
 #include <stdio.h>
-
 int main()
-
 { 
-
 int a[]={1,2,3,4},y,*p=&a[3];
-
  --p;
-
  y=*p;
-
 printf("y=%d\n",y);
-
 return 0;
-
 }
-
 其运行结果是_________。
-
-
 
 A. y=1
 B. y=0
 C. y=2
 D. y=3
-我的答案: D:y=3;正确答案: D:y=3;
-3分
+
+
+正确答案: D:y=3;
+
+
+
+
+
+
 4. (单选题, 3分)设有：int a[]={1,3,5,7},*p=a;以下表达式中值为5的是_________。
 A. *(p+2)
 B. *p+=2
 C. p+2
 D. *p+2
-我的答案: A:*(p+2);正确答案: A:*(p+2);
-3分
+
+
+正确答案: A:*(p+2);
+
+
+
+
+
+
+
 5. (单选题, 3分)有以下程序：
 #include <stdio.h>
-
 void f(int m,int *p,int *q)
-
 {
-
 	m=1;
-
 	*p=2;
-
 	q=p;
-
 }
-
 int main()
-
 {
-
 	int a=10,b=20,c=30;
-
 	f(a,&b,&c);
-
 	printf("%d,%d,%d\n",a,b,c);
-
     return 0;
-
 }
 
 其运行结果是_________。
-
-
 
 A. 1,2,2
 B. 10,2,30
 C. 10,20,30
 D. 10,2,2
-我的答案: B:10,2,30;正确答案: B:10,2,30;
-3分
+
+
+正确答案: B:10,2,30;
+
+
+
+
+
+
 6. (单选题, 3分)设有定义char c[20]="1234567",*p=&c[3];则strlen(p)的值为_________。
 A. 3
 B. 20
 C. 7
 D. 4
-我的答案: D:4;正确答案: D:4;
-3分
+正确答案: D:4;
+
+
+
+
+
+
+
 7. (单选题, 3分)若有定义：char s[10]= "include",*p=s;，则不能代表字符u的表达式是_________。
 A. p+=4,*p;
 B. s[4]
 C. s+4
 D. *(p+4)
-我的答案: C:s+4;正确答案: C:s+4;
-3分
+
+
+正确答案: C:s+4;
+
+
+
+
+
+
+
+
 8. (单选题, 3分)有以下函数：
 #include <stdio.h>
-
 int f(char *s)
-
 { 
-
 char *t=s;
-
   while(*t++);
-
   t--;
-
 return t-s;
-
 }
 
 下列关于函数f功能的叙述中正确的是_________。
@@ -127,43 +140,45 @@ return t-s;
 
 
 A. 比较两个串的大小
-B.
-求字符串s所占字节数
-
-
-
+B.求字符串s所占字节数
 C. 求字符串的长度
 D. 将串s复制到串t中
-我的答案: C:求字符串的长度;正确答案: C:求字符串的长度;
-3分
+
+
+正确答案: C:求字符串的长度;
+
+
+
+
+
+
+
 9. (单选题, 3分)对应下列main函数中的fun函数调用语句，以下给出的四个fun函数头中错误的是_____。
 int main()
-
 {	
-
 int a[10],n;
-
 fun(n,&a[9]);
-
 return 0;
-
 }
-
-
-
 A. void fun(int m,int *x) 
 B. void fun(int m,int x[10])
-C.
-void fun(int m,int x)
-
-
-
+C.void fun(int m,int x)
 D. void fun(int m,int x[])
-我的答案: A:void fun(int m,int *x) ;正确答案: C:void fun(int m,int x) ;
-0分
+
+
+正确答案: C:void fun(int m,int x) ;
+
+
+
+
+
+
+
 10. (单选题, 3分)若有说明：int a[4][5];，则对数组a的元素的非法引用是_________。
 A. a[0][2*2]
 B. a[4-2][0]
 C. a[0][5]
 D. *(*(a+1)+2)
-我的答案: C:a[0][5];正确答案: C:a[0][5];
+
+
+正确答案: C:a[0][5];
